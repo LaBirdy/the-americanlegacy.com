@@ -197,7 +197,7 @@ h2{
     object-fit: contain; /* Keeps the image's aspect ratio while fitting it within the container */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     body {
       font-size: 14px;
     }
@@ -238,7 +238,7 @@ h2{
   }
   
 /* CSS for smaller screens */
-@media screen and (max-width: 768px) {
+
     #navbar {
       display: flex;
       flex-direction: column; /* Stacks menu items vertically */
@@ -254,7 +254,7 @@ h2{
     }
   
     /* If you have a dropdown menu, make sure to update its styling here as well */
-  }
+
   
   /* Additional CSS to accommodate fixed navbar... */
   
