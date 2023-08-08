@@ -230,7 +230,7 @@ h2{
     #about > p {
       width: 100%;
     }
-  }
+ 
   
   .photo img {
     width: 100%; /* Ensures that the image fills the container */
@@ -255,7 +255,7 @@ h2{
   
     /* If you have a dropdown menu, make sure to update its styling here as well */
 
-  
+}
   /* Additional CSS to accommodate fixed navbar... */
   
   /* ... rest of the existing CSS code ... */
