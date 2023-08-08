@@ -198,6 +198,12 @@ h2{
 }
 
 @media only screen and (max-width: 900px) {
+   
+  
+    #about > p {
+        font-size: 1.4em;
+       
+     }
     body {
       font-size: 14px;
     }
@@ -218,7 +224,8 @@ h2{
     }
   
     #side-image img {
-      width: 100%;
+      width: 500px;
+     margin: 0px;
     }
   
     .photo {
