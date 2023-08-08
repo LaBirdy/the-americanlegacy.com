@@ -31,16 +31,25 @@ body {
     display: flex;
     align-items: flex-start;
 }
-
 #navbar {
-    position: static; /* Removes fixed position */
-    width: 100%; /* Half the width */
+    position: st;
+    width: 100%;
     top: 0;
-    
-    background-color: #8b3f47; /* Smokey Red */
+    background-color: #8b3f47;
     overflow: hidden;
-    z-index: 1000;
-}
+  }
+  
+  #navbar a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    float: left;
+  }
+  
+  #navbar a:hover {
+    background-color: #575757;
+  }
+  
 #side-image {
     margin: 20px;
   
@@ -187,3 +196,66 @@ h2{
     max-height: 200%; /* Ensures the image does not exceed the height of its container */
     object-fit: contain; /* Keeps the image's aspect ratio while fitting it within the container */
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    #navbar a, #logo a {
+      padding: 12px 14px;
+    }
+  
+    #first, #second {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #home {
+      width: 100%;
+      margin-right: 0;
+      padding: 20px;
+    }
+  
+    #side-image img {
+      width: 100%;
+    }
+  
+    .photo {
+      flex: 1 1 calc(100% - 10px);
+      width: 100%;
+      height: auto;
+    }
+  
+    #about > p {
+      width: 100%;
+    }
+  }
+  
+  .photo img {
+    width: 100%; /* Ensures that the image fills the container */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+/* CSS for smaller screens */
+@media screen and (max-width: 768px) {
+    #navbar {
+      display: flex;
+      flex-direction: column; /* Stacks menu items vertically */
+      align-items: center;
+      height: auto;
+    }
+  
+    #navbar a {
+      padding: 14px 16px;
+      text-decoration: none;
+      text-align: center; /* Centers text on smaller screens */
+      width: 100%; /* Makes each link take up full width */
+    }
+  
+    /* If you have a dropdown menu, make sure to update its styling here as well */
+  }
+  
+  /* Additional CSS to accommodate fixed navbar... */
+  
+  /* ... rest of the existing CSS code ... */
