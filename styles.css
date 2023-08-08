@@ -1,0 +1,189 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: none;
+    /* Hide scrollbar for IE and Edge */
+    -ms-overflow-style: none;
+    /* Allow scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+  
+  /* Hide scrollbar for Webkit browsers like Chrome, Safari */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+#header {
+    display: flex;
+    align-items: flex-start;
+}
+
+#navbar {
+    position: static; /* Removes fixed position */
+    width: 100%; /* Half the width */
+    top: 0;
+    
+    background-color: #8b3f47; /* Smokey Red */
+    overflow: hidden;
+    z-index: 1000;
+}
+#side-image {
+    margin: 20px;
+  
+}
+#navbar > a {
+    font-size: 1.5em;
+}
+#side-image img {
+    width: 90%; /* Makes the image fill its container */
+
+    height: auto; /* Maintains aspect ratio */
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #232f70; /* Smokey Blue */
+    color: white;
+}
+#logo a {
+    float: left;
+    display: block;
+    font-size: 1.69em;
+    font-weight: bold; /* Makes the text bold */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#logo a:hover {
+    background-color: #232f70; /* Smokey Blue */
+}
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+
+    width: 100%;
+    background-color: #232f70; /* Smokey Red */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#first {
+    display: flex;
+    flex-direction: row-reverse;
+margin-left: 35px;
+}
+#home{
+  
+    margin-right: 80px;
+margin-bottom: 10px;
+    padding: 40 40px;
+    width:50%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    color: rgb(225, 232, 238);
+    margin:30px;
+}
+.img-rounded {
+    border-radius: 10px; /* You can adjust this value to make the rounding softer or more pronounced */
+  
+  }
+
+#infobar-1{
+    display: flex;
+    justify-content: center; /* Options: flex-start, flex-end, space-between, space-around, space-evenly */
+    
+    padding: 0px;
+    width: 100%;
+   background-color:  #232f70;;
+}
+
+#second{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+#overlap{
+  
+    width:100%; /* Adjust to your desired container size */
+    height: auto
+  }
+
+ 
+  #about {
+    margin-top: 0px;
+    padding: 0 0px;
+    width: 100%;
+}
+#about > p {
+   font-size: 1.9em;
+   margin-top: 30px;
+
+   width:95%;
+}
+
+#infobar-2{
+    display: flex;
+    justify-content: center; /* Options: flex-start, flex-end, space-between, space-around, space-evenly */
+    
+    padding: 0px;
+    width: 100%;
+   background-color:  #8b3f47;;
+}
+#photo-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns the photos from the start of the container */
+    align-items: center; /* Vertically centers the images */
+}
+
+.photo {
+    flex: 1 1 calc(20% - 20px); /* Sets the basis to 20% and allows them to grow and shrink */
+    margin: 5px; /* Provides space around each photo */
+    position: relative; /* Positions the photo within the div */
+    width: 500px; /* Sets a fixed width for the photo container */
+    height: 500px; /* Sets a fixed height for the photo container */
+    overflow: hidden; /* Ensures that the images stay within their containers */
+    display: flex; /* Enables flexbox for the .photo container */
+    align-items: center; /* Vertically centers the image within .photo */
+    justify-content: center; /* Horizontally centers the image within .photo */
+}
+
+.photo img {
+    max-width: 200%; /* Ensures the image does not exceed the width of its container */
+    max-height: 200%; /* Ensures the image does not exceed the height of its container */
+    object-fit: contain; /* Keeps the image's aspect ratio while fitting it within the container */
+}
