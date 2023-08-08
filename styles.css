@@ -197,7 +197,7 @@ h2{
     object-fit: contain; /* Keeps the image's aspect ratio while fitting it within the container */
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     body {
       font-size: 14px;
     }
